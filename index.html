@@ -48,6 +48,20 @@
         color: black; /* Black paragraph color */
     }
 
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+        .copyright {
+            font-size: 18px;
+            color: #333;
+        }
     .news-item {
         margin-bottom: 20px;
     }
@@ -259,6 +273,26 @@
             color: orange;
         }
 
+         .whatsapp-floater {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .whatsapp-floater img {
+            width: 35px;
+            height: 35px;
+        }
+
     </style>
 </head>
 
@@ -313,6 +347,21 @@
         <span class="black">One Zambia</span> 
         <span class="orange">One Nation </span>
     </marquee>
+
+<!-- WhatsApp Button Floater HTML -->
+   
+ <div class="whatsapp-floater" id="whatsapp-floater">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+ <!-- Existing scripts -->
+    
+ <!-- WhatsApp Button Floater Script -->
+    <script>
+        document.getElementById('whatsapp-floater').addEventListener('click', function() {
+            window.open('https://wa.me/260975282913', '_Welcome to Malidea Tech');
+        });
+    </script>
     
     <!-- Search Section Start -->
     <div class="search-section">
@@ -544,7 +593,7 @@
    
     <!-- Privacy Section End -->
     <footer>
-        <td align="middle"><span class="copyright">Katuba. All Rights Reserved.
+        <td align="middle"><span class="copyright"> &copy; 2024 Katuba. All Rights Reserved.
           Designed and Maintained
           Madura Ngoma, SIN: 2111250942 </td> 
       </footer>
