@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FixMyStreet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f2f5;
+    }
+    .dashboard-section {
+  padding: 50px 0;
+}
+
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #333;
+  font-size: 24px;
+}
+
+.card-text {
+  color: green;
+  font-size: 16px;
+}
+
+    .sub-header {
+      background-color: green;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .sub-header .info li, .sub-header .social-links li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    .sub-header .info li i, .sub-header .social-links li a {
+      color: #ddd;
+    }
+
+    .header-area {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav .nav > li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .main-nav .nav > li > a {
+      color: green;
+      font-weight: 500;
+    }
+
+    .main-nav .nav > li > a.active, .main-nav .nav > li > a:hover {
+      color:green;
+    }
+
+    .report-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .report-container h2 {
+      margin-bottom: 20px;
+      color: green;
+    }
+
+    .report-container .form-control {
+      margin-bottom: 10px;
+      color: green;
+    }
+
+    .btn-submit {
+      background-color:green;
+      border: none;
+      width: 100%;
+      height: 50px;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+    }
+
+    .btn-submit:hover {
+      background-color:green;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color:green;
+    }
+
+    .menu-trigger {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .main-nav .nav {
+        display: none;
+      }
+
+      .menu-trigger {
+        display: block;
+        cursor: pointer;
+        color: green;
+        font-size: 24px;
+      }
+    }
+  
+    /* Existing styles */
+/* Header Area Styles */
+.header-area {
+    background-color: #ffffff; /* Background color for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure header appears above other content */
+}
+
+.container {
+    padding: 15px 0; /* Adjust padding as needed */
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    color: #008000;
+}
+
+.nav {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.nav li:last-child {
+    margin-right: 0; /* Remove margin from last menu item */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333333; /* Text color for menu items */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+    padding: 0 20px; /* Increase padding to create box form */
+    border-radius: 10px; /* Rounded corners for box form */
+    background-color: #f2f2f2; /* Background color for menu items */
+}
+
+.nav a:hover {
+    background-color: #007bff; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.menu-trigger {
+    display: none; /* Hide menu trigger by default for larger screens */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .menu-trigger {
+        display: block; /* Show menu trigger for smaller screens */
+        cursor: pointer;
+    }
+    
+    .nav {
+        display: none; /* Hide menu items by default on smaller screens */
+        flex-direction: column;
+        padding-top: 20px; /* Adjust spacing from top */
+    }
+
+    .nav.active {
+        display: flex; /* Show menu items when active class is applied */
+    }
+}
+
+    .report-feature h2,
+    .developers-feature h4,
+    .council-feature h4 {
+        color: green; /* Green heading color */
+        font-size: 28px;
+        margin-bottom: 20px;
+        background-color: whitesmoke;
+
+
+    /* Footer styles */
+    footer {
+        background-color: green; /* Change the background color to green */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+</style>
+  </style>
+</head>
+
+<body>
+  <!--
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+ 
+
+  <!-- Header Area Start -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- Logo Start -->
+            <div class="logo">
+              <h1>FixMyStreet</h1>
+          </div>
+             
+            </a>
+            <!-- Logo End -->
+            <!-- Menu Start -->
+            <ul class="nav">
+              <li><a href="index.html" class="active">Report a problem</a></li>
+              <li><a href="sign in.html">Sign in</a></li>
+              <li><a href="Local alerts.html">Local alerts</a></li>
+              <li><a href="Help.html">Help</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="#"><i class="fa fa-calendar"></i> Donate</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- Menu End -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Area End -->
+
+  <!-- Report Container Start -->
+  <div class="report-container">
+    <h2>Report a Problem</h2>
+    <form>
+      <div class="form-group">
+        <label for="issueType">Issue Type</label>
+        <select id="issueType" class="form-control" required>
+          <option value="" disabled selected>Select Issue Type</option>
+          <option value="pothole">Pothole</option>
+          <option value="broken-streetlight">Broken Streetlight</option>
+          <option value="graffiti">Graffiti</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="reportDetails">Report Details</label>
+        <textarea id="reportDetails" class="form-control" rows="4" placeholder="Describe the issue in detail" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" class="form-control" placeholder="Enter the location" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" id="phoneNumber" class="form-control" placeholder="Enter your phone number" required>
+      </div>
+      <button type="submit" class="btn btn-submit">Submit Report</button>
+    </form>
+  </div>
+  <!-- Report Container End -->
+<!-- Dashboard Section Start -->
+<section class="dashboard-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Monthly Reports</h5>
+            <p class="card-text">87</p>
+            <!-- Add your content for monthly reports here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Monthly Visitors</h5>
+            <p class="card-text">20000</p>
+            <!-- Add your content for visitors here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total Subscribers</h5>
+            <p class="card-text">1500</p>
+            <!-- Add your content for total subscribers here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Dashboard Section End -->
+
+<!-- Dashboard Section End -->
+
+  <!-- Footer Start -->
+  <footer>
+  <td align="middle"><span class="copyright">Katuba. All Rights Reserved.
+    Designed and Maintained
+    Madura Ngoma, SIN: 2111250942 </td> 
+</footer>
+  <!-- Footer End -->
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
+
