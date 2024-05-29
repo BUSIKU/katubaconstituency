@@ -284,11 +284,36 @@
             width: 35px;
             height: 35px;
         }
-
+.button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .styled-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .styled-button:hover {
+      background-color: #45a049;
+      transform: scale(1.05);
+    }
     </style>
 </head>
 
 <body>
+
+    <!--Quiz-->
+    <div class="button-container">
+  <a href="javascript:void(0)" class="styled-button" onclick="navigateToQuiz()">Go to Computer Studies Quiz</a>
+</div>
+
+    
     <!-- Preloader Start -->
     <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
@@ -595,6 +620,7 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/counter.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script> function navigateToQuiz() { window.location.href = 'computer_studies_quiz.html'; } </script>
 
 </body>
 
